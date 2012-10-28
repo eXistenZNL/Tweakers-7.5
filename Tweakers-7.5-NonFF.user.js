@@ -11,7 +11,6 @@
 // @run-at document-start
 // ==/UserScript==
 (function() {
-var hidesearchandtruelogo = false;
 var css = "/* \
  * Global styles \
  */ \
@@ -409,9 +408,26 @@ div.message.topicstarter .messageheader { \
  \
 /* \
  * End of about tweakers page \
- */";
- 
- if(hidesearchandtruelogo){css+="#mainSearch {display: none !important} #true {display: none !important}";}
+ */ \
+ \
+ /* \
+  * Searchbar tweaks \
+  */ \
+  \
+#mainSearch{\
+	position:relative;\
+	left:-20%;\
+	top:-80%;\
+} \
+ \
+ /* \
+  * 'True' Logo tweaks \
+  */ \
+ \
+#true { \
+	position:relative;\
+	top:-80%;\
+}";
 
 if (typeof GM_addStyle != "undefined") {GM_addStyle(css);
 } else if (typeof PRO_addStyle != "undefined") {PRO_addStyle(css);
