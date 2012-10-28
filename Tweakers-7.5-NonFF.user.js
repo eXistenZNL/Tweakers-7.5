@@ -147,6 +147,9 @@ h1, h2, h3, p { \
 	width: 330px; \
 	border: 1px solid #dddede; \
 	background: linear-gradient(#F5F6F6, #EDEEEE) repeat scroll 0 0 #EDEEEE; \
+	background: -ms-linear-gradient(#F5F6F6, #EDEEEE) repeat scroll 0 0 #EDEEEE; \
+	background: -webkit-linear-gradient(#F5F6F6, #EDEEEE) repeat scroll 0 0 #EDEEEE; \
+	background: -o-linear-gradient(#F5F6F6, #EDEEEE) repeat scroll 0 0 #EDEEEE; \
 	padding: 2px; \
 } \
  \
@@ -206,6 +209,9 @@ table.highlights { \
  \
 #inlineTracker { \
 	background: linear-gradient(#F5F6F6, #EDEEEE) repeat scroll 0 0 #EDEEEE; \
+	background: -o-linear-gradient(#F5F6F6, #EDEEEE) repeat scroll 0 0 #EDEEEE; \
+	background: -ms-linear-gradient(#F5F6F6, #EDEEEE) repeat scroll 0 0 #EDEEEE; \
+	background: -webkit-linear-gradient(#F5F6F6, #EDEEEE) repeat scroll 0 0 #EDEEEE; \
 	border: 1px solid #DDDEDE; \
 	border-radius: 1px 1px 1px 1px; \
 	box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.33) inset; \
@@ -357,18 +363,33 @@ div.message.topicstarter .messageheader { \
 /* Background colors on the right categories */ \
 .forumList:nth-child(3) table.listing th { \
 	background: linear-gradient(#db2252, #b5012e) repeat scroll 0 0 #c20c3b; \
+	background: -ms-linear-gradient(#db2252, #b5012e) repeat scroll 0 0 #c20c3b; \
+	background: -webkit-linear-gradient(#db2252, #b5012e) repeat scroll 0 0 #c20c3b; \
+	background: -o-linear-gradient(#db2252, #b5012e) repeat scroll 0 0 #c20c3b; \
 } \
 .forumList:nth-child(4) table.listing th { \
 	background: linear-gradient(#673c87, #4c2a66) repeat scroll 0 0 #553070; \
+	background: -ms-linear-gradient(#673c87, #4c2a66) repeat scroll 0 0 #553070; \
+	background: -webkit-linear-gradient(#673c87, #4c2a66) repeat scroll 0 0 #553070; \
+	background: -o-linear-gradient(#673c87, #4c2a66) repeat scroll 0 0 #553070; \
 } \
 .forumList:nth-child(5) table.listing th { \
 	background: linear-gradient(#24b635, #1c8c29) repeat scroll 0 0 #21a931; \
+	background: -ms-linear-gradient(#24b635, #1c8c29) repeat scroll 0 0 #21a931; \
+	background: -webkit-linear-gradient(#24b635, #1c8c29) repeat scroll 0 0 #21a931; \
+	background: -o-linear-gradient(#24b635, #1c8c29) repeat scroll 0 0 #21a931; \
 } \
 .forumList:nth-child(6) table.listing th { \
 	background: linear-gradient(#ff6d26, #ff4800) repeat scroll 0 0 #ff560e; \
+	background: -ms-linear-gradient(#ff6d26, #ff4800) repeat scroll 0 0 #ff560e; \
+	background: -webkit-linear-gradient(#ff6d26, #ff4800) repeat scroll 0 0 #ff560e; \
+	background: -o-linear-gradient(#ff6d26, #ff4800) repeat scroll 0 0 #ff560e; \
 } \
 .forumList:nth-child(7) table.listing th { \
 	background: linear-gradient(#00b689, #14a985) repeat scroll 0 0 #0fad85; \
+	background: -ms-linear-gradient(#00b689, #14a985) repeat scroll 0 0 #0fad85; \
+	background: -webkit-linear-gradient(#00b689, #14a985) repeat scroll 0 0 #0fad85; \
+	background: -o-linear-gradient(#00b689, #14a985) repeat scroll 0 0 #0fad85; \
 } \
 .forumList:nth-child(9) table.listing { \
 	margin-bottom: 0 !important; \
