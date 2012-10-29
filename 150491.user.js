@@ -468,6 +468,15 @@ div.message.topicstarter .messageheader { \
 #true { \
 	position:relative;\
 	top:-80%;\
+} \
+ \
+ /* \
+  * 'StreamOne' Logo tweaks \
+  */ \
+ \
+#streamone { \
+	position:relative;\
+	top:-80%;\
 }";
 
 addJQuery(placeTracker);
