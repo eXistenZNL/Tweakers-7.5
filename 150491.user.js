@@ -7,10 +7,41 @@
 // @include		http://gathering.tweakers.net/*
 // @include		https://gathering.tweakers.net/*
 // @include		https://secure.tweakers.net/*
-// @require		http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js
 // @version		dev
 // @grant		GM_addStyle
 // ==/UserScript==
+
+/*
+ * A function that loads jQuery and calls a callback function when jQuery has finished loading
+ * Slightly edited to be Opera compatible.
+ * src: http://stackoverflow.com/questions/2246901/how-can-i-use-jquery-in-greasemonkey-scripts-in-google-chrome
+ */
+ 
+function addJQuery(callback) {
+  var script = document.createElement("script");
+  script.setAttribute("src", "http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js");
+  script.addEventListener('load', function() {
+    var script = document.createElement("script");
+    script.textContent = "(" + callback.toString() + ")();";
+    document.getElementsByTagName('head')[0].appendChild(script);
+  }, false);
+  document.getElementsByTagName('head')[0].appendChild(script);
+}
+
+/* Place the tracker on a usable spot */
+function placeTracker(){
+	$.noConflict();
+	jQuery(document).ready(function($) {
+		$.ajax({
+			type: "GET",
+			url: "/xmlhttp/xmlHttp.php?application=frontpage&type=tracker&action=get_tracker&output=json&nocache=" + (new Date).getTime(),
+			dataType: "json",
+		}).done(function(data) {
+			html = '<div id="inlineTracker" class="fpItem tracker"><h2>Inline tracker</h2>' + data.data.html + "</div>";
+			$("#pricewatch").before(html);
+		});
+	});
+}
 
 (function() {
 var css = "/* \
@@ -437,6 +468,8 @@ div.message.topicstarter .messageheader { \
 	position:relative;\
 	top:-80%;\
 }";
+
+addJQuery(placeTracker);
 
 if (typeof GM_addStyle != "undefined") {GM_addStyle(css);
 } else if (typeof PRO_addStyle != "undefined") {PRO_addStyle(css);
