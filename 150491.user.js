@@ -245,6 +245,29 @@ table.highlights {
  */
 
 /*
+ * comments
+ */
+
+
+.eenReactie            { margin-top: 5px; width: 600px; } 
+.reactieContent        { padding: 5px 15px 5px 0px; } 
+.reactieHeader         { padding: 1px 0px 1px 15px; background-color: #E7E8E8; margin-left: -20px; } 
+.reactieBody.hidden .reactieHeader         { padding: 0px 10px; opacity: 0.35; } 
+.reactieBody.informative, 
+.reactieBody.informative .reactieHeader    { background-color: #EFFFE2; border-left: 1px solid #CFD4C9; } 
+.reactieBody.spotlight,  
+.reactieBody.spotlight .reactieHeader      { background-color: #D8FFC2; border-left: 1px solid #BECFBE; } 
+#pollListing               { overflow: visible; } 
+.reacties                  { padding-left: 10px; } 
+.modFilter                 { width: 375px; } 
+.modFilter .scoreButton    { margin-left: 3px; } 
+.modFilter .reactionCount  { margin: 0px 7px 0px 4px; } 
+
+/*
+ * End of comments
+ */
+
+/*
  * User galleries
  */
  
