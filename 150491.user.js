@@ -462,19 +462,10 @@ div.message.topicstarter .messageheader { \
 } \
  \
  /* \
-  * 'True' Logo tweaks \
+  * 'True', 'StreamOne' Logo tweaks \
   */ \
  \
-#true { \
-	position:relative;\
-	top:-80%;\
-} \
- \
- /* \
-  * 'StreamOne' Logo tweaks \
-  */ \
- \
-#streamone { \
+#true, #streamone { \
 	position:relative;\
 	top:-80%;\
 }";
