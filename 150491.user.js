@@ -9,6 +9,7 @@
 // @include		https://secure.tweakers.net/*
 // @version		dev
 // @grant		GM_addStyle
+// @run-at 		document-start
 // ==/UserScript==
 
 /*
