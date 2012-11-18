@@ -12,7 +12,7 @@
 // @grant		GM_addStyle
 // ==/UserScript==
 
-GM_addStyle((<><![CDATA[
+GM_addStyle((
 
 /*
  * Global styles
@@ -452,7 +452,7 @@ div.message.topicstarter .messageheader {
  */
  
  
-]]></>).toString());
+).toString());
 
 /** Place the tracker on a usable spot **/
 $.noConflict();
