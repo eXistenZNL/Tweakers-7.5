@@ -8,7 +8,7 @@
 // @include		https://gathering.tweakers.net/*
 // @include		https://secure.tweakers.net/*
 // @require		http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js
-// @version		dev
+// @version		1.1.4
 // @grant		GM_addStyle
 // ==/UserScript==
 
@@ -127,13 +127,9 @@ h1, h2, h3, p {
 	box-shadow: 0 0 10px 7px #222;
 }
 
-#bottom {
-	position: relative;
+#bottom .hr {
+	display: none;
 }
-
-	#bottom .hr {
-		display: none;
-	}
 
 /*
  * End of Global styles
@@ -170,7 +166,7 @@ h1, h2, h3, p {
 				}
 
 			#contentArea >  #fpaItems .fpaItem div.textContainer {
-				background-color: rgba(0,0,0, 0.5);
+				background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
 				color: #fff;
 				width: 100%;
 				height: auto;
@@ -196,6 +192,10 @@ table.highlights {
 
 	table.highlights td {
 		padding: 3px 0;
+	}
+
+	table.highlights .type {
+		padding: 0;
 	}
 
 .secondColumn .fpItem {
@@ -245,9 +245,8 @@ table.highlights {
  */
 
 /*
- * comments
+ * Comments
  */
-
 
 .eenReactie { 
 	margin-top: 5px; width: 600px; 
@@ -298,7 +297,6 @@ table.highlights {
 	.modFilter .reactionCount { 
 		margin: 0px 7px 0px 4px; 
 	} 
-
 
 /*
  * End of comments
