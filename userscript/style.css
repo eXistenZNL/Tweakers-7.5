@@ -36,25 +36,23 @@ h1, h2, h3, p {
 		position: absolute;
 		width: 320px;
 		right: 20px;
-		top: 22px;
+		top: 24px;
 		padding: 0;
 	}
 
 		#search .keywordSearch {
-			width: 176px;
 			height: 24px;
 			margin-top: 4px;
 			float: right;
 			margin-right: 10px;
+			width: 240px;
 		}
 
 		#search input.text {
-			width: 174px;
-			height: 16px;
 			font-size: 12px;
 			padding: 5px 10px 3px;
 		}
-		
+
 		#search input.text.small {
 			width: 88px;
 		}
@@ -65,25 +63,21 @@ h1, h2, h3, p {
 			height: 24px;
 			width: 26px;
 		}
-		
+
 		.mainSearchSuggest {
-			margin-left: -311px;
+			margin-left: -247px;
 		}
-		
+
 		#streamone {
 			position: absolute;
 			left: -15px;
 		}
-		
+
 		#detailedSearchListing {
 			width: 85px;
 			line-height: 16px;
 			height: 24px;
 			font-size: 12px;
-		}
-
-		#search .keywordSearch {
-			width: 220px;
 		}
 
 .galleryHeadingContainer, /* High header content */
@@ -104,7 +98,6 @@ h1, h2, h3, p {
 #tracker .fakeTop > div {
     bottom: -41px;
 }
-
 
 .notificationsContainer {
 	padding-top: 62px;
@@ -134,33 +127,56 @@ h1, h2, h3, p {
  * Frontpage
  */
 
-#fpaItems {
-	margin-bottom: 10px;
-	float: right;
-	width: 330px;
-	border: 1px solid #dddede;
-	background: linear-gradient(#F5F6F6, #EDEEEE) repeat scroll 0 0 #EDEEEE;
-	padding: 2px;
+#categoryBar {
+	margin: 0;
+	width: 659px;
+	border-right: 1px solid #e8eaea;
 }
 
-		#fpaItems .fpaItem {
+#categoryBar h2,
+#categoryBar li.more {
+	display: none;
+}
+
+#categoryBar li {
+	width: 70px;
+}
+
+.fpaItemsWrapper {
+	margin-bottom: 10px;
+	float: right;
+	width: 300px;
+	border: none;
+	overflow: visible;
+	margin: 0;
+}
+
+	.fpaItemsWrapper .fpaItems {
+		width: 100%
+	}
+
+		.fpaItemsWrapper .fpaItems .fpaItem {
 			float: left;
-			width: 161px;
-			margin: 1px !important;
-			height: 122px;
-			border: 1px solid #dddede;
+			width: 300px;
+			height: 100px;
 			position: relative;
+			padding: 0;
+			margin-bottom: 10px;
 		}
 
-			#fpaItems .fpaItem div.imageContainer {
+		.fpaItemsWrapper .fpaItems  .fpaItem.last {
+			margin-bottom: 0;
+		}
+
+			.fpaItemsWrapper  .fpaItem div.imageContainer {
 				width: 100%;
 			}
 
-				#fpaItems .fpaItem img {
-					margin-left: -42px;
-				}
+			.fpaItemsWrapper .fpaItem .fpaMeta {
+				display: none;
+			}
 
-			#fpaItems .fpaItem div.textContainer {
+			.fpaItemsWrapper .fpaItem .fpaTitle {
 				background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
 				color: #fff;
 				width: 100%;
@@ -170,7 +186,26 @@ h1, h2, h3, p {
 				padding: 4px;
 				position: absolute;
 				bottom: 0;
+				border: 0;
+				z-index: 10;
+				margin: 0;
+				width: 292px;
 			}
+
+			.fpaItemsWrapper .fpaItem .fpaTitle  h2 {
+				font-size: 17px;
+				line-height: 19px;
+			}
+
+			.fpaItemsWrapper .fpaItem .fpaTitle  p {
+				font-size: 12px;
+				line-height: 16px;
+			}
+
+			.fpaItemsWrapper .fpaItem .fpaImage {
+				margin-top: -25px;
+			}
+
 
 #fp_tabs_container {
 	margin-bottom: 10px;
@@ -193,13 +228,18 @@ table.highlights {
 		padding: 0;
 	}
 
-.secondColumn .fpItem {
-	margin-bottom: 10px;
-}
+	.frontpage.secondColumn {
+		padding-top: 10px;
+	}
 
-.secondColumn .fpItem:last-child {
-	margin-bottom: 0;
-}
+		.frontpage.secondColumn .fpItem ,
+		.frontpage.secondColumn #b_re {
+			margin-bottom: 10px;
+		}
+
+		.frontpage.secondColumn .fpItem:last-child {
+			margin-bottom: 0;
+		}
 
 #inlineTracker {
 	background: linear-gradient(#F5F6F6, #EDEEEE) repeat scroll 0 0 #EDEEEE;
@@ -217,7 +257,7 @@ table.highlights {
 		padding-left: 0;
 		margin: 0;
 	}
-	
+
 	#inlineTracker .time{
 		margin-right: 10px;
 	}
@@ -230,11 +270,11 @@ table.highlights {
 /*
  * Article detail page
  */
- 
+
 .articleColumn {
 	line-height: 1.4em;
 }
- 
+
 /*
  * End of article detail page
  */
@@ -243,55 +283,55 @@ table.highlights {
  * Comments
  */
 
-.eenReactie { 
-	margin-top: 5px; width: 600px; 
-} 
+.eenReactie {
+	margin-top: 5px; width: 600px;
+}
 
-.reactieContent { 
-	padding: 5px 15px 5px 0px; 
-} 
+.reactieContent {
+	padding: 5px 15px 5px 0px;
+}
 
-.reactieHeader { 
-	padding: 1px 0px 1px 15px; 
-	background-color: #E7E8E8; 
-	margin-left: -20px; 
-} 
+.reactieHeader {
+	padding: 1px 0px 1px 15px;
+	background-color: #E7E8E8;
+	margin-left: -20px;
+}
 
-.reactieBody.hidden .reactieHeader { 
-	padding: 0px 10px; opacity: 0.35; 
-} 
+.reactieBody.hidden .reactieHeader {
+	padding: 0px 10px; opacity: 0.35;
+}
 
-.reactieBody.informative, 
-.reactieBody.informative .reactieHeader { 
-	background-color: #EFFFE2; 
-	border-left: 1px solid #CFD4C9; 
-} 
+.reactieBody.informative,
+.reactieBody.informative .reactieHeader {
+	background-color: #EFFFE2;
+	border-left: 1px solid #CFD4C9;
+}
 
-.reactieBody.spotlight,  
-.reactieBody.spotlight .reactieHeader { 
-	background-color: #D8FFC2; 
-	border-left: 1px solid #BECFBE; 
-} 
+.reactieBody.spotlight,
+.reactieBody.spotlight .reactieHeader {
+	background-color: #D8FFC2;
+	border-left: 1px solid #BECFBE;
+}
 
-#pollListing { 
-	overflow: visible; 
-} 
+#pollListing {
+	overflow: visible;
+}
 
-.reacties { 
-	padding-left: 10px; 
-} 
+.reacties {
+	padding-left: 10px;
+}
 
-.modFilter { 
-	width: 375px; 
-} 
+.modFilter {
+	width: 375px;
+}
 
-	.modFilter .scoreButton { 
-		margin-left: 3px; 
-	} 
+	.modFilter .scoreButton {
+		margin-left: 3px;
+	}
 
-	.modFilter .reactionCount { 
-		margin: 0px 7px 0px 4px; 
-	} 
+	.modFilter .reactionCount {
+		margin: 0px 7px 0px 4px;
+	}
 
 /*
  * End of comments
@@ -300,7 +340,7 @@ table.highlights {
 /*
  * User galleries
  */
- 
+
 .galleryHeading .karma {
 	padding-top: 0;
 }
@@ -309,7 +349,7 @@ table.highlights {
 		display: inline;
 		margin-right: 5px;
 	}
- 
+
 /*
  * End of user galleries
  */
@@ -323,7 +363,11 @@ table.highlights {
 	position: relative;
 	top: 14px;
 }
- 
+
+#pmessages .messageheader {
+	background: none;
+}
+
 /*
  * End of Direct Message
  */
@@ -336,17 +380,41 @@ table.highlights {
 	position: relative;
 	top: 34px;
 }
- 
+
 /*
  * End of news articles
  */
- 
+
 /*
  * GoT
  */
 
+#mainSearch .options {
+	width: 100px;
+}
+
+	#search .options + .keyword {
+		margin-left: 101px;
+		margin-right: 26px;
+	}
+
+	#mainSearch .fancySelect {
+		font-size: 12px;
+		line-height: 25px;
+	}
+
 #forum_tabs {
-	padding-top: 0;
+	padding-top: 2px;
+}
+
+	#forum_tabs .pageTabs  a{
+		padding: 0 10px 0;
+	}
+
+	#forum_tabs .pageTabs li.link.right {
+		float: left;
+		margin: 0;
+	}
 }
 
 .reactie {
@@ -376,26 +444,42 @@ table.highlights {
 	display: none;
 }
 
-#messages, .topic_actions { 
+#messages, .topic_actions {
 	overflow: hidden;
 }
-	div.message .messageheader {
-		background-color: #ddd;
+	div.message {
+		margin-bottom: 5px;
+		border-radius: 0;
+		padding: 0;
 	}
 
-	div.message {
-		margin-bottom: 0px;
-		line-height: 1.4em;
-		border-top: 0;
-		border-radius: 0;
-	}	
- 
-#title { 
+		div.message .messageheader {
+			padding: 5px;
+			width: 968px;
+			background-color: #ddd;
+			margin-top: 0;
+		}
+
+		div.message.topicstarter .messageheader {
+			background-color: #bbb;
+		}
+
+		div.message .poster {
+			margin: 10px;
+			width: 130px;
+		}
+
+		div.message .post .messagecontent{
+			padding: 10px 0;
+		}
+
+
+#title {
 	height: 50px;
 }
 
 	#title p.mods {
-		display: none; 
+		display: none;
 	}
 
 .pagecounter {
@@ -404,10 +488,6 @@ table.highlights {
 
 #footer .breadcrumb {
 	margin-bottom: 0;
-}
-
-div.message.topicstarter .messageheader {
-	background-color: #ccc;
 }
 
 /* Background colors on the right categories */
@@ -433,11 +513,11 @@ div.message.topicstarter .messageheader {
 /*
  * End of GoT
  */
- 
+
 /*
  * About tweakers page
  */
- 
+
 .article #fpaItems:last-child {
 	margin-bottom: 0;
 }
