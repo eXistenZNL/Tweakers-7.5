@@ -20,7 +20,7 @@ jQuery(document).ready(function($) {
 	css.attr({
 		rel:  "stylesheet",
 		type: "text/css",
-		href: "http://tweakers-7punt5.github.io/style.css"
+		href: "http://tweakers-7punt5.github.io/userscript/style.css"
 	});
 
 	/** Place the tracker on a usable spot **/
