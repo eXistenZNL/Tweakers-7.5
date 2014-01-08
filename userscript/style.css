@@ -187,7 +187,7 @@ h1, h2, h3, p {
 				position: absolute;
 				bottom: 0;
 				border: 0;
-				z-index: 10;
+				z-index: 1;
 				margin: 0;
 				width: 292px;
 			}
