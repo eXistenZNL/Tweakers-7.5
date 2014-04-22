@@ -415,6 +415,9 @@ table.highlights {
 		float: left;
 		margin: 0;
 	}
+
+#forumheading .quicklinks {
+    margin-top: 46px;
 }
 
 .reactie {
