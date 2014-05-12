@@ -1,68 +1,95 @@
 <!DOCTYPE html>
-<!--
 
-Hello future GitHubber! I bet you're here to remove those nasty inline styles,
-DRY up these templates and make 'em nice and re-usable, right?
-
-Please, don't. https://github.com/styleguide/templates/2.0
-
--->
 <html>
   <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-    <title>Page not found &middot; GitHub Pages</title>
+    <title>Tweakers 7.5</title>
+    <link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
     <style type="text/css" media="screen">
-      body {
-        background-color: #f1f1f1;
-        margin: 0;
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      }
+        body {
+            background-color: #f1f1f1;
+            margin: 20px auto;
+			width: 836px;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+			text-align: center;
+        }
 
-      .container { margin: 50px auto 40px auto; width: 600px; text-align: center; }
+		h1 {
+            font-family: "Playball", "Helvetica Neue", Helvetica, Arial, sans-serif;
+			width: 820px;
+			position:relative;
+			line-height: 60px;
+			font-size: 60px;
+			font-weight: 100;
+			margin: 10px 0 20px 0;
+			text-shadow: 0 2px 3px #aaaaaa;
+		}
 
-      a { color: #4183c4; text-decoration: none; }
-      a:hover { text-decoration: underline; }
+        .img {
+            position: relative;
+            border: 4px solid #fff;
+            box-shadow: 1px 1px 10px #aaaaaa;
+            margin: 5px 5px 30px;
+            width: 400px;
+            height: 500px;
+            overflow: hidden;
+            float: left;
+        }
 
-      h1 { width: 800px; position:relative; left: -100px; letter-spacing: -1px; line-height: 60px; font-size: 60px; font-weight: 100; margin: 0px 0 50px 0; text-shadow: 0 1px 0 #fff; }
-      p { color: rgba(0, 0, 0, 0.5); margin: 20px 0; line-height: 1.6; }
+        .img span {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            background-color: rgba(0,0,0,0.6);
+            color: #fff;
+            font-family: "Playball", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 1.6em;
+            z-index: 1;
+        }
 
-      ul { list-style: none; margin: 25px 0; padding: 0; }
-      li { display: table-cell; font-weight: bold; width: 1%; }
+		p {
+            color: #777777;
+            margin: 20px 0;
+            line-height: 1.6;
+        }
 
-      .logo { display: inline-block; margin-top: 35px; }
-      .logo-img-2x { display: none; }
-      @media
-      only screen and (-webkit-min-device-pixel-ratio: 2),
-      only screen and (   min--moz-device-pixel-ratio: 2),
-      only screen and (     -o-min-device-pixel-ratio: 2/1),
-      only screen and (        min-device-pixel-ratio: 2),
-      only screen and (                min-resolution: 192dpi),
-      only screen and (                min-resolution: 2dppx) {
-        .logo-img-1x { display: none; }
-        .logo-img-2x { display: inline-block; }
-      }
-
-      #suggestions {
-        margin-top: 35px;
-        color: #ccc;
-      }
-      #suggestions a {
-        color: #666666;
-        font-weight: 200;
-        font-size: 14px;
-        margin: 0 10px;
-      }
+        .download {
+            clear: both;
+            color: #fff;
+            background-color: #009900;
+            display: block;
+            border-radius: 16px;
+            padding: 4px;
+            width: 180px;
+            height: 30px;
+            line-height: 30px;
+            margin: 0 auto;
+            box-shadow: 1px 1px 10px #AAAAAA;
+            text-decoration: none;
+        }
 
     </style>
   </head>
   <body>
+    <h1>Tweakers 7.5</h1>
 
-    <div class="container">
+    <p>Tweakers 7.5 is a theme designed to make Tweakers 7 usable again:<br/>
+        higher data density - oldskool color scheme - various layout enhancements
+    </p>
 
-      <h1>Tweakers 7.5</h1>
-      <p><strong>Tweakers 7.5 - Tijdelijke pagina</strong></p>
-
+    <div class="img">
+        <img src="img/front.png" alt="Tweakers Frontpage" />
+        <span>Tweakers frontpage</span>
     </div>
+    <div class="img">
+        <img src="img/got.png"  alt="Gathering of Tweakers"/>
+        <span>Gathering of Tweakers</span>
+    </div>
+
+    <a class="download" href="/userscript/150491.user.js">Download now</a>
+
   </body>
 </html>
-
