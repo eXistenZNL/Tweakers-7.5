@@ -11,6 +11,10 @@ body {
     background-color: #444444;
 }
 
+#top {
+    height: 70px;
+}
+
 h1, h2, h3, p {
 	margin: 0 0 10px;
 }
@@ -36,7 +40,7 @@ h1, h2, h3, p {
 		position: absolute;
 		width: 320px;
 		right: 20px;
-		top: 24px;
+		top: 60px;
 		padding: 0;
 	}
 
