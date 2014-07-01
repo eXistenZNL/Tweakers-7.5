@@ -480,6 +480,13 @@ table.highlights {
 			padding: 10px 0;
 		}
 
+	div.message.ownpost {
+		background-image: none;
+		padding-top: 0;
+	}
+		div.message.ownpost .messageheader {
+			background: none #d1f0fd;
+		}
 
 #title {
 	height: 50px;
