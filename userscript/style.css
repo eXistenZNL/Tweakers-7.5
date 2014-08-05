@@ -11,20 +11,8 @@ body {
     background-color: #444444;
 }
 
-#top {
-    height: 70px;
-}
-
 h1, h2, h3, p {
 	margin: 0 0 10px;
-}
-
-#menubar {
-	width: 1020px;
-	border-radius: 8px 8px 0 0;
-	height: 32px;
-	margin-bottom: 36px;
-	z-index: 2;
 }
 
 #searchbar {
@@ -40,7 +28,7 @@ h1, h2, h3, p {
 		position: absolute;
 		width: 320px;
 		right: 20px;
-		top: 60px;
+		top: 20px;
 		padding: 0;
 	}
 
