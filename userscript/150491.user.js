@@ -8,7 +8,7 @@
 // @include		https://gathering.tweakers.net/*
 // @include		https://secure.tweakers.net/*
 // @require		http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js
-// @version		1.2.0
+// @version		1.2.1
 // ==/UserScript==
 
 $.noConflict();
@@ -20,7 +20,7 @@ jQuery(document).ready(function($) {
 	css.attr({
 		rel:  "stylesheet",
 		type: "text/css",
-		href: "http://tweakers-7punt5.github.io/userscript/style.css"
+		href: "https://tweakers-7punt5.github.io/userscript/style.css"
 	});
 
 	/** Place the tracker on a usable spot **/
