@@ -3,17 +3,26 @@
  */
 
 body {
-	background: #444;
+	background: #444444;
 }
 
 #layout {
     min-height: 100%;
     background-color: #444444;
+    overflow: hidden;
 }
 
 h1, h2, h3, p {
 	margin: 0 0 10px;
 }
+
+#top {
+    border-bottom: 4px solid #313232;
+}
+
+    #menubottombar {
+        display: none;
+    }
 
 #searchbar {
 	width: 1020px;
@@ -82,13 +91,8 @@ h1, h2, h3, p {
 	width: 1020px;
 }
 
-#tracker .fakeTop {
-    height: 70px;
-    border-bottom: 1px solid rgb(195, 198, 198);
-}
-
 #tracker .fakeTop > div {
-    bottom: -41px;
+    bottom: -46px;
 }
 
 .notificationsContainer {
